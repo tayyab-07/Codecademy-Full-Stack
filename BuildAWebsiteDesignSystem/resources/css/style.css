@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(213, 216, 221)
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Comfortaa', 'Dosis', sans-serif;
+}
+
+p {
+  font-family: 'Dosis', 'Comfortaa', sans-serif;
+  font-size: 18px;
+  color: rgb(43, 69, 85);
+}
+
+pre {
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: rgb(43, 69, 85);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(43, 69, 85);
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding: 10px;
+  color: rgb(213, 216, 221);
+  background-color: rgb(43, 69, 85);
+}
+
+
+/* Section */
+section {
+  border: 3px solid rgb(43, 69, 85);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: rgb(213, 216, 221);
+}
+
+section h2 {
+  margin: 15px 0px 15px 0px;
+  padding: 3px;
+  padding-left: 15px;
+  color: rgb(213, 216, 221);
+  background-color: rgb(42, 69, 85);
+}
+
+
+/* Colors Section */
+.swatch {
+  margin: 15px;
+  margin-bottom: 35px;
+  height: 100px;
+}
+
+.colors h2 {
+  margin-bottom: 22px;
+}
+
+.swatch div {
+  width: 25%;
+  height: 110px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.swatch span {
+  color: rgb(43, 69, 85);
+  font-weight: 400;
+}
+
+.swatch p {
+  position: relative;
+  margin: 5px;
+  left: 30%;
+  bottom: 115px;
+  font-weight: bold;
+}
+
+.swatch .dark-blue {
+  background-color: rgb(43, 69, 85);
+}
+
+.swatch .blue {
+  background-color: rgb(19, 84, 134);
+}
+
+.swatch .light-blue {
+  background-color: rgb(91, 162, 190);
+}
+
+.swatch .gray {
+  background-color: rgb(152, 157, 164);
+}
+
+.swatch .white {
+  background-color: rgb(213, 216, 221);
+}
+
+.color-name {
+  font-size: 22px;
+}
+
+
+/* Fonts Section */
+.fonts div {
+  margin: 15px;
+}
+
+.comfortaa h3,
+.comfortaa p {
+  font-family: 'Comfortaa';
+}
+
+.dosis h3,
+.dosis p {
+  font-family: 'Dosis';
+}
+
+.sans-serif h3,
+.sans-serif p {
+  font-family: sans-serif;
+}
+
+.fonts div .light-text {
+  font-weight: 100;
+}
+
+.fonts div .bold {
+  font-weight: 500;
+}
+
+.fonts div .boldest {
+  font-weight: 900;
+}
+
+.fonts div.sans-serif .bold {
+  font-weight: 600;
+}
+
+
+/* Text Styles Section*/
+.text-styles h3,
+.text-styles pre {
+  margin-left: 15px;
+}

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(206, 222, 229);
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(42, 69, 81);
+  color: white;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(54, 87, 99);
+  color: white;
+  margin-bottom: 15px;
+}
+
+table {
+  border: 5px solid rgb(32, 57, 65);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+thead {
+  background-color: rgb(70, 106, 119);
+  color: white;
+  font-size: 20px;
+}
+
+td {
+  border: 1px solid rgb(32, 57, 65);
+  text-align: left;
+}
+
+td.name {
+  font-weight: bold;
+}
+
+.code p {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.name {
+  width: 15%;
+}
+
+.example {
+  width: 35%;
+}
+
+.timesnewroman {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.backgroundgreen {
+  background-color: greenyellow;
+}
+
+.alignright {
+  text-align: right;
+}

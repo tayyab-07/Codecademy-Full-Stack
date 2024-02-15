@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CSS Selectors | Cheat Sheet</title>
+	<link rel="stylesheet" href="./resources/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1>CSS Selectors Cheat Sheet</h1>
+
+	<section>
+		<h2>CSS Selectors</h2>
+
+		<table>
+
+			<thead>
+				<tr>
+					<th class="name">Selector Name</th>
+					<th class="example">Selector Example</th>
+					<th class="description">Description</th>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td class="name">Type Selector</td>
+					<td class="code">
+						<p>p {</p>
+						<p> &nbsp; &nbsp; font.family: 'Times New Roman';</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>CSS type selectors are used to match all elements of a given type or tag name.</p>
+						<p>For example, the code on the left will set the font of all paragraphs to
+							<span class="timesnewroman">Times New Roman</span>.
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">Class Selector</td>
+					<td class="code">
+						<p>.columns {</p>
+						<p> &nbsp; &nbsp; font.weight: bold;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>The CSS class selector matches elements based on the contents of their class attribute.</p>
+						<p>For example, the code on the left will make the contents of every 'columns' class to
+							<strong>bold</strong>.
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">ID Selector</td>
+					<td class="code">
+						<p>#author-names {</p>
+						<p> &nbsp; &nbsp; font-style: italic;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>The CSS ID selector matches elements based on the contents of their ID attribute.</p>
+						<p>The example on the left sets the font style to <em>italic</em> for all 'author-names' IDs.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">Grouped Selectors</td>
+					<td class="code">
+						<p>h1, h2 {</p>
+						<p> &nbsp; &nbsp; color: red;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>Multiple selectors can be matched to the same CSS rule by using a comma-separated list.</p>
+						<p>In the example to the left, the text for both 'h1' and 'h2' is set to <span class="red">red</span>.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">Chaining Selectors</td>
+					<td class="code">
+						<p>h3.section-heading {</p>
+						<p> &nbsp; &nbsp; background-color: green;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>CSS selectors can be chained so that rule sets apply only to elements that match all criteria.</p>
+						<p>For example, the code on the left will take the 'h3' elements that also have the 'section-heading' class
+							and set the background-color to <span class="backgroundgreen">green</span>.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">Descendant Selectors</td>
+					<td class="code">
+						<p>ol li {</p>
+						<p> &nbsp; &nbsp; text-align: right;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>The CSS descendant selector combinator is used to match elements that are descended from another matched
+							selector.</p>
+						<p class="alignright">In the example on the left, the 'li'/list elements that have descended from the
+							'ol'/ordered-list elements
+							will have their text aligned to the right.</p>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Other things to remember</h2>
+
+		<table>
+
+			<thead>
+				<tr>
+					<th class="name">Name</th>
+					<th class="example">Example</th>
+					<th class="description">Description</th>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td class="name">Selector Specificity</td>
+					<td class="code">
+						<p>h1#header {</p>
+						<p> &nbsp; &nbsp; color: blue;</p>
+						<p>}</p>
+						<p></p>
+						<p>h1 {</p>
+						<p> &nbsp; &nbsp; color: red;</p>
+						<p>}</p>
+					</td>
+					<td>
+						<p>Specificity is a ranking system that is used when there are multiple conflicting property values that
+							point to the same element. When determining which rule to apply, the selector with the highest specificity
+							wins out. The most specific selector type is the ID selector, followed by class selectors, followed by
+							type selectors.
+						</p>
+						<p>
+							In this example, only color: <span class="blue">blue</span> will be implemented as it has an ID selector
+							whereas
+							color: red has a type selector.
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="name">Multiple HTML Attributes</td>
+					<td class="code">
+						<p>&lt;div class="value1 value2 value3"&gt;&lt;/div&gt;</p>
+					</td>
+					<td>
+						<p>Some HTML attributes can have multiple attribute values. Multiple attribute values are separated by a
+							space between each attribute.</p>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</section>
+
+</body>
+
+</html>

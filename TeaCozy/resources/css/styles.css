@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+
+/* Header */
+header {
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  display: inline-flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+header img {
+  height: 50px;
+  margin: auto 10px;
+}
+
+header ul {
+  margin: auto 0;
+}
+
+header ul li {
+  display: inline;
+  margin: auto 10px;
+}
+
+header ul li a:hover {
+  color: darkgoldenrod;
+}
+
+
+/* Mission */
+.mission {
+  position: relative;
+  top: 69px;
+  background-image: url(../images/img-mission-background.jpg);
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mission div {
+  width: 100%;
+  opacity: 1.0;
+}
+
+.mission div h2,
+.mission div h4 {
+  margin: 10px 0;
+}
+
+
+/* Featured */
+.featured {
+  width: 1000px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.featured h2 {
+  margin: 20px auto;
+}
+
+.featured .container {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured .container div {
+  margin: 15px;
+}
+
+.featured .container div h4 {
+  margin-top: 10px;
+}
+
+.featured .container img {
+  width: 300px;
+  height: 200px;
+}
+
+
+/* Locations */
+.location {
+  background-image: url(../images/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.location h2 {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.location .container {
+  display: inline-flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 1200px;
+  height: 500px;
+  opacity: 1.0;
+}
+
+.location .container div {
+  opacity: 1.0;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  margin: 15px 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.location .container div h3,
+.location .container div h4 {
+  min-width: 100%;
+  text-align: center;
+}
+
+
+/* Contacts */
+.contact {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.contact h2,
+.contact h5 {
+  min-width: 100%;
+  text-align: center;
+}
+
+footer {
+  margin: 20px;
+}

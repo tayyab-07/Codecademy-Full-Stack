@@ -1,0 +1,151 @@
+:root {
+  font-size: 16px;
+
+  --bg-color: rgb(7, 71, 90);
+  --bg-color-light: rgb(13, 106, 135);
+  --light-blue: rgb(142, 199, 210);
+  --white: rgb(238, 230, 244);
+  --highlight: rgb(218, 7, 59);
+
+  --font-family: 'Sono', monospace, 'sans-serif';
+  --heading-font-weight: 600;
+  --regular-font-weight: 500;
+  --light-font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+/* Font Sizes and Weights */
+h1 {
+  font-size: 3rem;
+  font-weight: var(--heading-font-weight);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: var(--regular-font-weight);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: var(--regular-font-weight);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: var(--light-font-weight);
+}
+
+
+/* Header Section */
+
+header {
+  width: 100%;
+  position: fixed;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+}
+
+header .logo {
+  margin: 0.5rem;
+  color: var(--white);
+  width: 40.125rem;
+}
+
+header .logo span {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+header ul {
+  width: 480px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 5px;
+}
+
+header .button a:hover {
+  border: 2px solid white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+header .button a:active {
+  color: var(--light-blue);
+  border-color: var(--bg-color-light);
+}
+
+@media only screen and (max-width: 1110px) {
+  header {
+    display: block;
+  }
+
+  header ul {
+    padding: 1rem 0 1rem 0;
+    border: 2px solid var(--white);
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    justify-content: right;
+  }
+
+  header ul li {
+    margin: 0 2.5rem 0 0;
+  }
+
+  section.main-page {
+    position: relative;
+    top: 120px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  header .logo h2,
+  header .logo span {
+    font-size: 1.25rem;
+  }
+
+  header .logo h3 {
+    font-size: 1rem;
+  }
+
+  header ul {
+
+    justify-content: space-around;
+  }
+
+  header ul li {
+    margin: 0;
+  }
+
+  header ul li a {
+    font-size: 12px;
+  }
+
+  section.main-page {
+    position: relative;
+    top: 140px;
+  }
+}
+
+
+/* Main */
+
+.main-page {
+  position: relative;
+  top: 100px;
+}
