@@ -1,2 +1,2 @@
 # Codecademy-Full-Stack
-Repository for CodeCademy Full-Stack Engineer Career Path Course
+Repository for Codecademy's Full-Stack Engineer Career Path Course
