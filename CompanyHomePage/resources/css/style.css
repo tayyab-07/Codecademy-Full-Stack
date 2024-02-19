@@ -40,6 +40,9 @@ h4 {
   font-weight: var(--light-font-weight);
 }
 
+span {
+  color: var(--highlight);
+}
 
 /* Header Section */
 
@@ -49,6 +52,7 @@ header {
   display: inline-flex;
   justify-content: space-between;
   background-color: var(--bg-color);
+  z-index: 1;
 }
 
 header .logo {
@@ -58,12 +62,11 @@ header .logo {
 }
 
 header .logo span {
-  color: var(--white);
   font-size: 1.5rem;
 }
 
 header ul {
-  width: 480px;
+  width: 30rem;
   padding: 0;
   display: inline-flex;
   justify-content: space-around;
@@ -74,13 +77,13 @@ header ul {
 header ul li a {
   text-decoration: none;
   color: var(--white);
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 header .button a:hover {
-  border: 2px solid white;
-  padding: 3px;
-  border-radius: 5px;
+  border: 0.125rem solid white;
+  padding: 0.1875rem;
+  border-radius: 0.3125rem;
 }
 
 header .button a:active {
@@ -88,14 +91,14 @@ header .button a:active {
   border-color: var(--bg-color-light);
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1024px) {
   header {
     display: block;
   }
 
   header ul {
     padding: 1rem 0 1rem 0;
-    border: 2px solid var(--white);
+    border: 0.125rem solid var(--white);
     border-left: 0;
     border-right: 0;
     width: 100%;
@@ -108,11 +111,11 @@ header .button a:active {
 
   section.main-page {
     position: relative;
-    top: 120px;
+    top: 7.5rem;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
 
   header .logo h2,
   header .logo span {
@@ -124,7 +127,6 @@ header .button a:active {
   }
 
   header ul {
-
     justify-content: space-around;
   }
 
@@ -133,19 +135,60 @@ header .button a:active {
   }
 
   header ul li a {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   section.main-page {
     position: relative;
-    top: 140px;
+    top: 8.75rem;
   }
 }
+
+@media only screen and (max-width: 480px) {}
 
 
 /* Main */
 
 .main-page {
   position: relative;
-  top: 100px;
+  top: 4.5rem;
+}
+
+
+/* Splash Section */
+.splash {
+  padding: 6rem 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--bg-color-light);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.splash h2 {
+  padding-bottom: 1rem;
+}
+
+.splash h3 {
+  line-height: 1.1;
+}
+
+.splash .splash-container {
+  margin: auto 0;
+}
+
+.splash .splash-container.text {
+  text-align: left;
+  width: 50%;
+}
+
+.splash .splash-container.text img {
+  width: 10rem;
+  height: auto;
+}
+
+.splash .splash-container.text img:hover {}
+
+.splash .splash-container.title {
+  text-align: center;
 }
