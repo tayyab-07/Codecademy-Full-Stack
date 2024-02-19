@@ -157,38 +157,67 @@ header .button a:active {
 
 /* Splash Section */
 .splash {
-  padding: 6rem 2rem;
+  padding: 6rem 2rem 0 2rem;
   margin-bottom: 2rem;
   background-color: var(--bg-color-light);
   color: var(--white);
+}
+
+.splash-container {
   display: flex;
   justify-content: space-between;
 }
 
-.splash h2 {
+.splash-container h2 {
   padding-bottom: 1rem;
 }
 
-.splash h3 {
+.splash-container h3 {
   line-height: 1.1;
 }
 
-.splash .splash-container {
+.splash-container .text,
+.splash-container .title {
   margin: auto 0;
+  width: 45%;
 }
 
-.splash .splash-container.text {
+.splash-container .title {
+  text-align: center;
+}
+
+.splash-container .text {
   text-align: left;
-  width: 50%;
 }
 
-.splash .splash-container.text img {
-  width: 10rem;
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+  margin: 2rem auto 0 auto;
+  padding-bottom: 2rem;
+}
+
+.links img {
+  width: 4rem;
   height: auto;
 }
 
-.splash .splash-container.text img:hover {}
+.links a {
+  padding: 0.3125rem;
+}
 
-.splash .splash-container.title {
-  text-align: center;
+.links a:hover {
+  border: 0.125rem solid white;
+  padding: 0.1875rem;
+  border-radius: 0.3125rem;
+}
+
+/* Featured Section */
+
+/* Footer */
+footer {
+  position: relative;
+  top: 4.55rem;
 }
