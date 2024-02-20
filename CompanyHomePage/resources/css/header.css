@@ -9,13 +9,13 @@ header {
   z-index: 1;
 }
 
-header .logo {
+.logo {
   margin: 0.5rem;
   color: var(--white);
-  width: 40.125rem;
+  width: 33rem;
 }
 
-header .logo span {
+.logo span {
   font-size: 1.5rem;
 }
 
@@ -34,18 +34,19 @@ header ul li a {
   padding: 0.3125rem;
 }
 
-header .button a:hover {
+.button a:hover {
   border: 0.125rem solid white;
   padding: 0.1875rem;
   border-radius: 0.3125rem;
 }
 
-header .button a:active {
+.button a:active {
   color: var(--light-blue);
   border-color: var(--bg-color-light);
 }
 
 @media only screen and (max-width: 1024px) {
+
   header {
     display: block;
   }
@@ -62,24 +63,25 @@ header .button a:active {
   header ul li {
     margin: 0 2.5rem 0 0;
   }
-
-  .main-page {
-    position: relative;
-    top: 7.5rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {
 
-  header .logo h2,
-  header .logo span {
+  .logo h2,
+  .logo span {
     font-size: 1.25rem;
   }
 
-  header .logo h3 {
+  .logo h3 {
     font-size: 1rem;
   }
 
+  header ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
   header ul {
     justify-content: space-around;
   }
@@ -87,15 +89,6 @@ header .button a:active {
   header ul li {
     margin: 0;
   }
-
-  header ul li a {
-    font-size: 0.75rem;
-  }
-
-  section.main-page {
-    position: relative;
-    top: 8.75rem;
-  }
 }
 
-/*@media only screen and (max-width: 480px) {}*/
+@media only screen and (max-width: 480px) {}
