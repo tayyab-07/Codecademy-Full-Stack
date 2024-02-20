@@ -44,6 +44,11 @@ span {
   color: var(--highlight);
 }
 
+.main-page {
+  position: relative;
+  top: 4.5rem;
+}
+
 /* Header Section */
 
 header {
@@ -109,7 +114,7 @@ header .button a:active {
     margin: 0 2.5rem 0 0;
   }
 
-  section.main-page {
+  .main-page {
     position: relative;
     top: 7.5rem;
   }
@@ -144,15 +149,11 @@ header .button a:active {
   }
 }
 
-@media only screen and (max-width: 480px) {}
+/*@media only screen and (max-width: 480px) {}*/
 
 
 /* Main */
 
-.main-page {
-  position: relative;
-  top: 4.5rem;
-}
 
 
 /* Splash Section */
@@ -168,26 +169,22 @@ header .button a:active {
   justify-content: space-between;
 }
 
-.splash-container h2 {
-  padding-bottom: 1rem;
-}
-
-.splash-container h3 {
-  line-height: 1.1;
-}
-
-.splash-container .text,
-.splash-container .title {
+.text,
+.title {
   margin: auto 0;
   width: 45%;
 }
 
-.splash-container .title {
+.title {
   text-align: center;
 }
 
-.splash-container .text {
+.text {
   text-align: left;
+}
+
+.text h3 {
+  line-height: 1.1;
 }
 
 .links {
@@ -206,6 +203,7 @@ header .button a:active {
 
 .links a {
   padding: 0.3125rem;
+  height: 4.625rem;
 }
 
 .links a:hover {
@@ -214,10 +212,52 @@ header .button a:active {
   border-radius: 0.3125rem;
 }
 
+.links a:active {
+  border-color: var(--bg-color);
+  background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 1024px) {
+
+  h1 {
+    color: blueviolet;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .title h2 {
+    font-size: 1rem;
+  }
+
+  .text h3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    color: brown;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+  h1 {
+    color: rgb(142, 199, 210);
+  }
+
+  footer {
+    position: relative;
+    top: 8rem;
+  }
+}
+
+
 /* Featured Section */
 
 /* Footer */
-footer {
-  position: relative;
-  top: 4.55rem;
-}
+/* footer { */
+/*position: relative;*/
+/*top: 4.55rem;*/
