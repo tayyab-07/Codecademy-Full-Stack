@@ -6,7 +6,7 @@
 }
 
 .featured h2 {
-  font-size: 2.375rem;
+  font-size: 2rem;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -17,11 +17,12 @@
   justify-content: center;
   width: 90%;
   margin: 0 auto;
+  max-width: 1726px;
 }
 
 .project-blocks img {
   width: auto;
-  height: 100%;
+  height: 101%;
 }
 
 .project-blocks h3,
@@ -52,11 +53,6 @@
 
 @media only screen and (max-width: 1024px) {
 
-  .project-blocks img {
-    width: 100%;
-    height: auto;
-  }
-
   .project-blocks h3 {
     font-size: 1rem;
   }
@@ -73,15 +69,44 @@
 
   .project-blocks a {
     width: 20rem;
-    height: 9rem;
+    height: 12rem;
   }
 
   .project-blocks a:hover {
     width: 22rem;
-    height: 11rem;
+    height: 14rem;
   }
 }
 
 @media only screen and (max-width: 782px) {
-  /* Make pics bigger again */
+
+  .featured h2 {
+    font-size: 1.625rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .project-blocks h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-blocks h4 {
+    font-size: 1rem;
+  }
+
+  .project-blocks h3,
+  .project-blocks h4 {
+    position: relative;
+    bottom: 4.375rem;
+  }
+
+  .project-blocks a {
+    width: 25rem;
+    height: 14rem;
+  }
+
+  .project-blocks a:hover {
+    width: 27rem;
+    height: 16rem;
+  }
+
 }

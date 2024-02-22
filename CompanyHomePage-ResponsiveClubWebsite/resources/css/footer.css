@@ -1,0 +1,17 @@
+/* Footer */
+
+footer {
+  background-color: var(--bg-color-light);
+  display: inline-flex;
+  justify-content: left;
+  width: 100%;
+}
+
+footer div {
+  margin: 0 1rem 0 5rem;
+  padding: 0.5rem 0;
+}
+
+footer .icons {
+  margin-left: 1rem;
+}
