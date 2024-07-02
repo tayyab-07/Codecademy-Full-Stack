@@ -42,12 +42,11 @@ const quotes =
 
   _part2:
   [
-    'Think',
-    'Respect',
-    'Be',
-    'Let',
-    'Pursue',
-    {1: 'SOMETHING', 2: ['yes', 'no', 'maybe']},
+    {mid: 'think', end: ['lightly of yourself.', 'deeply of the world.', 'without resentment or complaint.']},
+    {mid: 'respect', end: ['the gods without counting on their help.', 'your honour.', 'the path. Never stray from the Way.']},
+    {mid: 'be', end: ['detached from desire.', 'indifferent to where you live.', 'careful to not let yourself be guided by the feeling of lust or love.']},
+    {mid: 'let', end: ['your honour be preserved.', 'go of goods or fiefs for your old age.', 'go of regret.']},
+    {mid: 'accept', end: ['everthing just the way it is.', 'having no preferences in all things.', 'letting go of possessions you no longer need.']}
   ],
 
   selectPart1(x)
@@ -61,7 +60,36 @@ const quotes =
   }
 
 }
-// CHECK CHAT GPT ITS ON THERE.....................................................................................................................................................
-//console.log(quotes.selectPart1(Math.floor(Math.random() * 3)), quotes.selectPart2(Math.floor(Math.random() * 5)));
 
-console.log(quotes.selectPart2(5[0]));
+/*
+const part1 = quotes.selectPart1(Math.floor(Math.random() * 3));
+const part2 = quotes.selectPart2(Math.floor(Math.random() * 5));
+console.log(part1, part2['mid'], part2['end'][Math.floor(Math.random() * 3)]);
+*/
+
+console.log('Welcome to the Mixed Messages Generator.');
+console.log('This generator contains wise words derived from Miyamoto Musashis 21 precepts from Dokkodo');
+console.log('Enter "M" to generate a new quote.')
+console.log('Enter "1" to end the program.')
+
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const askQuestion = () => {
+  rl.question('Enter something (type "exit" to quit): ', (answer) => {
+    console.log(`You entered: ${answer}`);
+    if (answer.toLowerCase() === 'exit') {
+      rl.close();
+      console.log("Exited the loop.");
+      return;
+    }
+    askQuestion(); // Recurse to ask the next question
+  });
+};
+
+askQuestion();
