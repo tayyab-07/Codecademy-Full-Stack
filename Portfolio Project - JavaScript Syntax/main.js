@@ -1,13 +1,24 @@
 /* Portfolio Project - JavaScript Syntax
           -  Mixed Messages  -
 
-For this project, you will build a message generator program. 
+
+
+////////////////////////////////////// TO RUN ////////////////////////////////////////////////////////////////////
+1) HAVE NODE.JS INSTALLED
+2) NAVIGATE TO THIS FILE IN YOUR COMMAND PROMPT / GITBASH
+3) RUN THE LINE "node main.js"
+
+
+
+// BRIEF
+
+"For this project, you will build a message generator program. 
 Every time a user runs a program, they should get a new, randomized output. 
 You’re welcome to take the project in a couple of different forms, 
    like an astrology generator, inspirational message, or nonsensical jokes. 
 To make your program truly random, 
    the message that it outputs should be made up of at least three different pieces of data. 
-Take what you know of JavaScript syntax so far to build the program and customize it to your liking.
+Take what you know of JavaScript syntax so far to build the program and customize it to your liking."
 
 
 Plan: 
@@ -19,14 +30,14 @@ Plan:
     4.2) the first part can stay the same to make it easier
     4.3) the second and third parts must be randomly selected from a set of potential messages
     4.4) output the randomly generated message
-  5) if user ends the program, then simply end the program. (The main section of the program will be run within a while loop)
+  5) if user ends the program, then simply end the program.
 
 Topic:
-  The topic will be loosely based on Miyamoto Musashi 21 principles of Dokkodo. 
+  The topic will be loosely based on Miyamoto Musashis 21 principles of Dokkodo. 
 
   General Format:
     1) Always / Do / You must
-    2) Think / Respect / Be / Let / Pursue
+    2) Think / Respect / Be / Let / Accept
     3) ...
 
 */
@@ -61,34 +72,43 @@ const quotes =
 
 }
 
-/*
-const part1 = quotes.selectPart1(Math.floor(Math.random() * 3));
-const part2 = quotes.selectPart2(Math.floor(Math.random() * 5));
-console.log(part1, part2['mid'], part2['end'][Math.floor(Math.random() * 3)]);
-*/
 
 console.log('Welcome to the Mixed Messages Generator.');
 console.log('This generator contains wise words derived from Miyamoto Musashis 21 precepts from Dokkodo');
 console.log('Enter "M" to generate a new quote.')
 console.log('Enter "1" to end the program.')
 
-
+// READLINE AND QUESTION FUNCTIONALITY FROM CHATGPT.
 const readline = require('readline');
 
-const rl = readline.createInterface({
+const rl = readline.createInterface
+({
   input: process.stdin,
   output: process.stdout
 });
 
-const askQuestion = () => {
-  rl.question('Enter something (type "exit" to quit): ', (answer) => {
-    console.log(`You entered: ${answer}`);
-    if (answer.toLowerCase() === 'exit') {
+const askQuestion = () => 
+{
+  rl.question('', (answer) => 
+  {
+    if (answer === '1') 
+    {
       rl.close();
-      console.log("Exited the loop.");
       return;
     }
-    askQuestion(); // Recurse to ask the next question
+    else if (answer.toLowerCase() === 'm')
+    {
+      const part1 = quotes.selectPart1(Math.floor(Math.random() * 3));
+      const part2 = quotes.selectPart2(Math.floor(Math.random() * 5));
+      console.log(part1, part2['mid'], part2['end'][Math.floor(Math.random() * 3)]);
+    }
+    else 
+    {
+      console.log('Please enter "M" to generate a new quote or enter "1" to end the program.');
+    }
+
+    askQuestion();
+
   });
 };
 
