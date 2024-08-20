@@ -1,0 +1,28 @@
+/* universal styles */
+:root {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+
+  --darkest-blue: #171d41;
+  --dark-blue: #21295c;
+  --med-dark-blue: #1b3b6f;
+  --med-blue: #065a82;
+  --med-light-blue: #1c7293;
+  --light-blue: #9eb3c2;
+  --white: #e3e9ed;
+
+  color: var(--white);
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(rgba(23, 29, 65, 1), rgba(23, 29, 65, 0.8), rgb(77, 255, 0)), 
+    url(../images/football-pitch-background.jpg);
+  background-size: cover; 
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
