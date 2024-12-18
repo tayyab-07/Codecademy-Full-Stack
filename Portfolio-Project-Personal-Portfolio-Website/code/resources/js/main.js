@@ -1,15 +1,9 @@
-// const box3 = document.querySelector('.box3');
-
-// box3.addEventListener('click', () => {
-//   box3.classList.toggle('clicked');
-// });
-
-const box3 = document.querySelector('.box3');
+const box_desc = document.querySelector('.box-desc');
 const area = document.querySelector('.area');
 
-box3.addEventListener('click', ()=> {
+box_desc.addEventListener('click', ()=> {
 
-  box3.classList.toggle('show');
+  box_desc.classList.toggle('show');
 
   if (area.classList.contains('hidden')) 
   {
